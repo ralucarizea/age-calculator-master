@@ -1,0 +1,123 @@
+.card-form {
+  font-family: "PoppinsBold", sans-serif;
+  color: #716f6f;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, calc((100% - 56px) / 3)));
+  grid-template-rows: minmax(auto, 33%) auto;
+  grid-gap: 8px 36px;
+  justify-items: start;
+}
+.form__label {
+  grid-row: 1/2;
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.form__input {
+  padding: 0px 0px 0px 8px;
+  font-family: "PoppinsBold", sans-serif;
+  color: #000;
+  grid-row: 2/3;
+  width: -webkit-fill-available;
+  height: 3rem;
+  border-radius: 8px;
+  border-color: #dcdcdc;
+  border-style: groove;
+}
+
+::placeholder {
+  font-family: "PoppinsBold", sans-serif;
+  color: #716f6f;
+  opacity: 0.5;
+}
+
+.card__button-container {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.card__breakingLine {
+  margin: 0px;
+  width: 100%;
+  border: 0.5px solid #dcdcdc;
+}
+
+.card__button {
+  width: 4rem;
+  height: 4rem;
+  padding: 0px;
+  background-color: #854dff;
+  border-radius: 50%;
+  border: 0px;
+  position: absolute;
+  z-index: 1;
+}
+.card__button:hover {
+  background-color: #000;
+}
+.card__button-image {
+  background-image: url("../../assets/images/icon-arrow.svg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.error {
+  color: red;
+  font-size: 11px;
+  margin: 0;
+  text-align: left;
+  font-family: "PoppinsRegular";
+  /* border: 0.5px solid red; */
+}
+
+/*-----------------------------------600px---------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+  .card__button {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card-form {
+    grid-template-columns: minmax(64px, 184px); /* switch to one column */
+    grid-template-rows: auto; /* remove the fixed height row */
+    grid-gap: 16px; /* increase the gap for mobile */
+    /* justify-items: stretch; stretch items to fill the width */
+  }
+
+  .form__label {
+    grid-row: auto; /* remove the grid-row property */
+    font-size: 12px; /* decrease font size for mobile */
+  }
+
+  .form__input {
+    grid-row: auto; /* remove the grid-row property */
+    height: 2.5rem; /* decrease height for mobile */
+  }
+  .card__button {
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card__button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  /* Add some padding to the first and last inputs for spacing */
+}
