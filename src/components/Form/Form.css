@@ -87,7 +87,7 @@
   /* border-color: red; */
   outline: none;
 }
-/*-----------------------------------600px---------------------------------*/
+/*-----------------------------------Different screen sizes---------------------------------*/
 
 @media only screen and (max-width: 1000px) {
   .card__button {
@@ -98,20 +98,19 @@
 
 @media only screen and (max-width: 800px) {
   .card-form {
-    grid-template-columns: minmax(64px, 184px); /* switch to one column */
-    grid-template-rows: auto; /* remove the fixed height row */
-    grid-gap: 16px; /* increase the gap for mobile */
-    /* justify-items: stretch; stretch items to fill the width */
+    grid-template-columns: minmax(64px, 184px); 
+    grid-template-rows: auto; 
+    grid-gap: 16px; 
   }
 
   .form__label {
-    grid-row: auto; /* remove the grid-row property */
-    font-size: 12px; /* decrease font size for mobile */
+    grid-row: auto;
+    font-size: 12px;
   }
 
   .form__input {
-    grid-row: auto; /* remove the grid-row property */
-    height: 2.5rem; /* decrease height for mobile */
+    grid-row: auto; 
+    height: 2.5rem; 
   }
   .card__button {
     width: 3rem;
@@ -127,5 +126,5 @@
     height: 2.75rem;
   }
 
-  /* Add some padding to the first and last inputs for spacing */
+ 
 }
