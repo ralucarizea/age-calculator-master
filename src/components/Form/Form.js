@@ -48,7 +48,7 @@ export default function Form({ formData, setInputData }) {
         </label>
         <input
           id="day"
-          className="form__input"
+          className={(errors.day !== undefined && errors.day?.message !=='') ? "form__input error__input" : "form__input"}
           type="number"
           name="day"
           placeholder="DD"
@@ -56,13 +56,13 @@ export default function Form({ formData, setInputData }) {
           value={input.day}
           {...register("day")}
         />
-        <p className="error"> {errors.day?.message}</p>
+        <p className="error">{errors.day?.message} </p>
         <label htmlFor="month" className="form__label">
           MONTH
         </label>
         <input
           id="month"
-          className="form__input"
+          className={(errors.month !== undefined && errors.month?.message !=='') ? "form__input error__input" : "form__input"}
           type="number"
           name="month"
           placeholder="MM"
@@ -76,7 +76,7 @@ export default function Form({ formData, setInputData }) {
         </label>
         <input
           id="year"
-          className="form__input"
+          className={(errors.year !== undefined && errors.year?.message !=='') ? "form__input error__input" : "form__input"}
           name="year"
           type="number"
           placeholder="YYYY"
