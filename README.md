@@ -36,7 +36,7 @@ Users should be able to:
 | Desktop                                    | Mobile                                     |
 | ------------------------------------------ | ------------------------------------------ |
 |                                            |                                            |
-| ![](./screenshots/FireShot Capture001.png) | ![](./screenshots/FireShot Capture006.png) |
+| ![](screenshots/FireShot Capture001.png)   | ![](./screenshots/FireShot Capture006.png) |
 |                                            |                                            |
 | ![](./screenshots/FireShot Capture002.png) |                                            |
 |                                            |                                            |
